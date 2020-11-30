@@ -347,15 +347,14 @@ button:focus{
     </div>
     <div class="w3-section">
       <label>Subject</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
-    </div>
-    <div class="w3-section">
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>#
       <label>Message</label>
       <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
     </div>
     <button type="submit" class="w3-button w3-block w3-black">Send</button>
   </form>
   <button class="open-button" onclick="openForm()">Login </button>
+  
   <div class="form-popup" id="myForm">
 	<form action="/action_page.php" class="form-container">
 	  <h1>Login</h1>
@@ -366,8 +365,10 @@ button:focus{
 	  <label for="psw"><b>Password</b></label>
 	  <input type="password" placeholder="Enter Password" name="psw" required>
   
-	  <button type="submit" class="btn">Login</button>
-	  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <a style="font-size: 10px; text-decoration: none; text-align: center;" href="signup.html">New User? SignUp</a>
+    
 	</form>
   </div>
   
@@ -433,4 +434,3 @@ function showDivs(n) {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
-
