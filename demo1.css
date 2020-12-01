@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    width:500px;
+    height: 130px;
+    margin-left:600px;
+    z-index: 10;
+    
+}
+
+
+.navbar-nav a{
+   
+    margin-left:70px;
+    border-radius:10px;
+    width:150px;
+    text-align: center;
+    transition-duration: 300ms;
+    z-index: 8;
+  
+    
+}
+
+
+a:hover{
+    background-color: rgb(204, 199, 199);
+    color:white;
+    text-align: center;
+    letter-spacing: 2px;
+    padding:auto;
+    content: hidden;
+}
+.parentDiv{
+    width:100%;
+    height: 700px;
+    background-image: url("https://c.stocksy.com/a/m7x100/z9/465606.jpg");
+    background-size: cover;
+    object-fit: cover;
+}
+@media (max-width:400px){
+    .parentDiv
+       {
+         width:100%;
+        height:500px;
+    }
+}
+.para{
+    width:570px;
+    height:300px;
+    position: absolute;
+    font-weight: 50px;
+    line-height: 40px;;
+    top:450px;
+    right:0;
+}
+@media (max-width:500px){
+    .para{
+        width:100%;
+        margin-top:270px;
+    }
+}
+.compProfile{
+    width:100%;
+    height: 150px;
+    padding-left: 50px;
+    padding-top:60px;
+   
+    
+    
+
+}
+@media(max-width:400px){
+    .compProfile h1{
+        border-top:2px solid grey;
+        margin-top:200px;
+    }
+}
+
+.log{
+    width:100%;
+    height:300px;
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items : center;
+
+}
+@media (max-width:400px){
+    .log{
+        width:100%;
+        margin-top:120px;
+        padding-left:12px;
+    }
+}
+.first{
+    width:100px;
+    height:100px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.first i{
+    font-weight: 100px;
+    font-size: 130px;
+}
+.first img{
+    width:170px;
+    height:100px;
+}
+.lastPara{
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+.lastPara li a{
+    color: black;
+    text-decoration: none;
+    
+}
+.lastPara li a:hover{
+    letter-spacing: normal;
+}
+
+.last{
+   width:100%;
+   height: 250px;
+   background-color: black;
+   display:flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+    
+
+.follows{
+    height: 100px;
+    width:100px;
+    
+}
+.follows i{
+    font-weight: 100px;
+    font-size: 130px;
+}
+.open-button {
+	background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right:  28px;
+  width: 200px;
+}
+button:focus{
+	outline: none;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  
+  
+}
+/* body :not(.form-container){
+    filter: blur(2px);    
+} */
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color:darkgray;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:black;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover, .ope-button:hover {
+	
+  opacity: 2;
+}
+
