@@ -1,368 +1,116 @@
 <!DOCTYPE html>
-<html style="scroll-behavior: smooth;">
-<title>Chore Hunt | Jobs4All</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
-.mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-	background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right:  28px;
-  width: 200px;
-}
-button:focus{
-	outline: none;
-}
-body{
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="demo1.css">
+    <title>Document</title>
+</head>
+<style></style>
+<body>
+  <div class="w3-top" >
+    <div class="w3-row w3-large w3-light-grey">
+      <div class="w3-col s3">
+        <a href="#" style="text-decoration:none ;" class="w3-button w3-block">Home</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="job.html" style="text-decoration:none ;" class="w3-button w3-block">Jobs</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" style="text-decoration:none ;" class="w3-button w3-block">About</a>
+      </div>
+      <div class="w3-col s3 w3-green" >
+        <a href="sign.html" style="text-decoration:none ;" class="w3-button w3-block">SignUp</a>
+      </div>
+    </div>
+  </div>
  
-}
 
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
 
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-  
-  
-}
-/* body :not(.form-container){
-    filter: blur(2px);    
-} */
+    <!-- Nav bar ending -->
 
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color:darkgray;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color:black;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover, .ope-button:hover {
-	
-  opacity: 2;
-}
-</style>
-<body >
-
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-large w3-light-grey">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block">Home</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#plans" class="w3-button w3-block">Jobs</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block">About</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#contact" class="w3-button w3-block">Contact</a>
-    </div>
-  </div>
-</div>
-
-<!-- Content -->
-<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
-
-  <div class="w3-panel">
-      <img src="abc.png" style="width: 20%; height: 20%;"></img>
-		<form class="form-inline" style="float: right; width: 50%;">
-			
-			<i class="fa fa-search" aria-hidden="true"></i>
-			<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search Jobs, Keyskills, Designation, Companies "
-        aria-label="Search">
+    <!-- Body section starting -->
     
-        
-		  </form>
-
-    <!-- <h1><b>CHORE HUNT</b></h1> -->
-    <!-- <p>Job4All</p> -->
-  </div>
-
-  <!-- Slideshow -->
-  <div class="w3-container">
-    <div class="w3-display-container mySlides">
-      <img src="https://www.stoodnt.com/blog/wp-content/uploads/2018/08/expat-finding-a-job-in-chennai.jpg" style="width:100%">
-      <div class="w3-display-topleft w3-container w3-padding-32">
-        <!-- <span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum</span> -->
-      </div>
-    </div>
-    <div class="w3-display-container mySlides">
-      <img src="https://c.stocksy.com/a/m7x100/z9/465606.jpg" style="width:100%">
-      <div class="w3-display-middle w3-container w3-padding-32">
-        <!-- <span class="w3-white w3-padding-large w3-animate-bottom">Klorim tipsum</span> -->
-      </div>
-    </div>
-    <div class="w3-display-container mySlides">
-      <img src="https://dpuk71x9wlmkf.cloudfront.net/assets/2018/05/15191844/Looking-for-a-job_social.jpg" style="width:100%">
-      <div class="w3-display-topright w3-container w3-padding-32">
-        <!-- <span class="w3-white w3-padding-large w3-animate-bottom">Blorum pipsum</span> -->
-      </div>
-    </div>
-
-    <!-- Slideshow next/previous buttons -->
-    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
-      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
-      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
     
-      <div class="w3-center">
-        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Grid -->
-  <div class="w3-row w3-container">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
-    </div>
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <h3>Companies</h3>
-      <p>Use Chore Hunt to publish jobs, events, promotions, movement and network.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-      <h3>Professionals </h3>
-      <p>Apply for best hospitality jobs from top hospitality companies, stay informed with industry updates and network with global colleagues.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-      <h3>Institutes</h3>
-      <p>Chore  Hunt Helps Schools to Publish Courses and Attract the Best Students, We Provide Alumni Section and Networking Opportunities.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-        <h3>Students</h3>
-        <p>Discover and easily apply to courses that match your requirements. Join your school alumni and network. </p>
-    </div>
-   
-  </div>
-
-  <!-- Grid -->
-  <div class="w3-row-padding" id="plans">
-    <div class="w3-center w3-padding-64">
-      <h3>Plans</h3>
-      <p>Discover and easily apply to jobs that match your requirements.Choose any of options below and register  </p>
-    </div>
-<form action="signup.html">
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Fresher</li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$0</h2>
-          <span class="w3-opacity">Free</span>
-        </li>
-        <!-- <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large" >Sign Up</button>
-        </li> -->
-      </ul>
-    </div>
-</form>
-<form action="signup.html">
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Professional</li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$0</h2>
-          <span class="w3-opacity">Free</span>
-        </li>
-        <!-- <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-        </li> -->
-      </ul>
-    </div>
-</form>
-<form action="signup.html">
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Company</li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$0</h2>
-          <span class="w3-opacity">Free</span>
-        </li>
-        <!-- <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-        </li> -->
-      </ul>
-    </div>
-  </div>
-</form>
-<div style="text-align: center;">
-<a class="w3-button w3-green w3-padding-large text-center" style="text-decoration: none;" href="signup.html">Sign Up</a>
-</div>
-  <!-- Grid -->
-  <div class="w3-row-padding" id="about">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <!-- <img src="https://pbs.twimg.com/profile_images/744490154841149440/2IkzDgdh_400x400.jpg" alt="John" style="width:100%"> -->
-        <div class="w3-container">
-          <h3>Noel Philip Issac</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Backend Developer</p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <!-- <img src="pp.jpeg" alt="Mike" style="width:100%"> -->
-        <div class="w3-container">
-          <h3>Steve D James</h3>
-          <p class="w3-opacity">Web Designing</p>
-          <p>Front End Developer</p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <!-- <img src="pp (1).jpeg" alt="Jane" style="width:100%"> -->
-        <div class="w3-container">
-          <h3>Jerin Thomas</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Javascript Developer</p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-row-padding" id="about">
-       
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4">
-            <!-- <img src="https://pbs.twimg.com/profile_images/744490154841149440/2IkzDgdh_400x400.jpg" alt="John" style="width:100%"> -->
-            <div class="w3-container">
-              <h3>Ashbi P Binu </h3>
-              <p class="w3-opacity">Web Designer</p>
-              <p>Front End Developer </p>
-              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    <div class="">
+    <div class="w3-container" style="margin-top: 3.5em;">
+      <div class="w3-display-container mySlides">
+        <img src="https://c.stocksy.com/a/m7x100/z9/465606.jpg" style="width:100%">
+        <div class="w3-display-topleft w3-container w3-padding-32">
+          
+                
             </div>
           </div>
         </div>
-    
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4">
-            <!-- <img src="pp.jpeg" alt="Mike" style="width:100%"> -->
-            <div class="w3-container">
-              <h3>Kichu</h3>
-              <p class="w3-opacity">Database Handler</p>
-              <p>Backend Developer</p>
-              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-          </div>
+   <div class="container w3-row-padding" >
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Explore More Companies</span>
+    </div>
+
+       <div class="container text-center col-md-6" style="float: left;">
+      <img src="https://www.newsclick.in/sites/default/files/2017-09/multinational-companies_0.jpg" alt="" style="width: 100%;">
+    </div>
+    <div class="container  col-md-6" style="float: left;">
+      <p style="text-align: justify; color: rgb(92, 89, 89); padding-top: 4em;"> Just because you're starting a business, doesn't mean you have to be an expert on everything. If you're not an accountant or bookkeeper, hire one (or both). (These Tips for Finding a Good Accountant may be useful.) If you need to write up a contract, and you're not a lawyer, hire one. You will waste more time and possibly money in the long run trying to do things yourself that you are not qualified to do.</p>
+      <button type="submit" class="w3-button w3-black  " >Read More..</button>
+
+    </div>
+       <div class="container" id="about">
+       <div class="w3-row w3-container">
+        <div class="w3-center w3-padding-64">
+          <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+        </div>
+        <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+          <h3>Companies</h3>
+          <p>Use Chore Hunt to publish jobs, events, promotions, movement and network.</p>
         </div>
     
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4">
-            <!-- <img src="pp (1).jpeg" alt="Jane" style="width:100%"> -->
-            <div class="w3-container">
-              <h3>Jxyx</h3>
-              <p class="w3-opacity">Designer</p>
-              <p>Javascript Developer</p>
-              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-          </div>
+        <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+          <h3>Professionals </h3>
+          <p>Apply for best hospitality jobs from top hospitality companies, stay informed with industry updates and network with global colleagues.</p>
         </div>
-
-  <!-- Contact -->
-  <div class="w3-center w3-padding-64" id="contact">
-    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
-  </div>
-
-  <form class="w3-container" action="/action_page.php" target="_blank">
-    <div class="w3-section">
-      <label>Name</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    
+        <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+          <h3>Institutes</h3>
+          <p>Chore  Hunt Helps Schools to Publish Courses and Attract the Best Students, We Provide Alumni Section and Networking Opportunities.</p>
+        </div>
+    
+        <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+            <h3>Students</h3>
+            <p>Discover and easily apply to courses that match your requirements. Join your school alumni and network. </p>
+        </div>
+      </div>
+     
+    
+    <div class="w3-center w3-padding-64" id="contact">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
     </div>
-    <div class="w3-section">
-      <label>Email</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+  
+    <form class="w3-container" action="/action_page.php" target="_blank" id="login">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Subject</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>#
+        <label>Message</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-black">Send</button>
+    </form>
     </div>
-    <div class="w3-section">
-      <label>Subject</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>#
-      <label>Message</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
-    </div>
-    <button type="submit" class="w3-button w3-block w3-black">Send</button>
-  </form>
-  </div>
-  <button class="open-button" id="btnid" onclick="openForm()">Login </button>
+    <button class="open-button" id="btnid" onclick="openForm()">Login </button>
  
   <div class="form-popup" id="myForm">
 	<form action="/action_page.php" class="form-container">
@@ -376,7 +124,7 @@ body{
   
     <button type="submit" class="btn">Login</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    <a style="font-size: 10px; text-decoration: none; text-align: center;" href="signup.html">New User? SignUp</a>
+    <a style="font-size: 10px; text-decoration: none; text-align: center;" href="sign.html">New User? SignUp</a>
     
 	</form>
   </div>
@@ -391,54 +139,27 @@ body{
   }
   </script>
   
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+ 
+      <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">chorehunt.com</a></p>
+    </footer>
+   </section>
+      
+   
+     <!-- Body section starting -->
 
 
-<!-- Footer -->
 
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-  <h4>Thank You</h4>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">chorehunt.com</a></p>
-</footer>
-
-
-<script>
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
+  <!-- jQuery and JS bundle w/ Popper.js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
