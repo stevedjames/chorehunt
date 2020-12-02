@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
   <head>
 
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>PHPJabbers.com | Free Job Agency Website Template</title>
+    <title>Job Portal</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -133,7 +133,14 @@
     </style>
   <body>
 
-
+    <!-- <div id="preloader">
+      <div class="jumper">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+  </div>   -->
+  
     <!-- Header -->
  
       <div class="w3-top" >
@@ -156,21 +163,14 @@
       <div class="container " id="myButton1" style="margin-top: 4em;">
         <div class="w3-row-padding" id="plans">
           <div class="w3-center">
-              <h1 ><b>STUDENT JOB PORTAL</b></h1> 
+              <h1 ><b>JOB PORTAL</b></h1> 
             <p>Discover and easily apply to jobs that match your requirements </p>
           </div>
           </div>
       </div>
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="container banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-          <div class="text-content">
-            <h4>Find your career today!</h4>
-            <h2>You are at right spot</h2>
-          </div>
-        </div>
+  
         <!-- <div class="banner-item-02">
           <div class="text-content">
             <h4>Fugiat Aspernatur</h4>
@@ -183,139 +183,255 @@
             <h2>Quaerat suscipit unde minus dicta</h2>
           </div>
         </div> -->
-      </div>
-    </div>
+      
     <!-- Banner Ends Here -->
 
-    <div class="latest-products">
+    <!-- Page Content -->
+  
+    <div class="products">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Featured Jobs</h2>
-              <a href="#">view more <i class="fa fa-angle-right"></i></a>
-            </div>
+          <div class="col-md-3">
+             <div class="contact-form">
+                <form action="#">
+                 <h5 style="margin-bottom: 15px">Type</h5>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Contract (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Full time (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Internship (5)</small>
+                      </label>
+                 </div>
+
+                 <br>
+
+                 <h5 style="margin-bottom: 15px">Category</h5>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Accounting / Finance / Insurance Jobs (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Accounting / Finance / Insurance Jobs (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Accounting / Finance / Insurance Jobs (5)</small>
+                      </label>
+                 </div>
+
+                 <br>
+
+                 <h5 style="margin-bottom: 15px">Career levels</h5>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Entry Level (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Entry Level (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Entry Level (5)</small>
+                      </label>
+                 </div>
+
+                 <br>
+
+                 <h5 style="margin-bottom: 15px">Education levels</h5>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Associate Degree (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Associate Degree (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                           <small>Associate Degree (5)</small>
+                      </label>
+                 </div>
+
+                 <br>
+
+
+                 <h5 style="margin-bottom: 15px">Years of experience</h5>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                            <small>&lt; 1 (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                            <small>&lt; 1 (5)</small>
+                      </label>
+                 </div>
+
+                 <div>
+                      <label>
+                           <input type="checkbox">
+
+                            <small>&lt; 1 (5)</small>
+                      </label>
+                 </div>
+            </form>
+             </div>
           </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="job-details.html"><img src="https://lh3.googleusercontent.com/proxy/TIbVwopmid7oh05ViiGlRsDi1H8jjcDlDG0C9R2SSuaTehRLjiMzM7cBnU3fi5HyTgs5yO1IkVbE5LhGlq3Cla8OpZNxGPDUMjbB2xUxWwB10MoJykjcMTrQbK9ErIat" alt="" style="width: 370px; height: 270px;"></a>
-              <div class="down-content">
-                <a href="job-details.html"><h4>HTML, CSS Developer</h4></a>
 
-                <h6>$60 000</h6>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="https://i1.wp.com/itmarkerz.co.in/blog/wp-content/uploads/2017/10/hire-a-best-php-developer.jpg?resize=541%2C301" alt="" style="width: 370px; height: 270px;"></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>PHP Developer</h4></a>
 
-                <h4><small><i class="fa fa-briefcase"></i>  <br> <strong><i class="fa fa-building"></i> Techno Park, Trivandrum </strong></small></h4>
+                    <h6>$60 000</h6>
 
-                <small>
-                     <strong title="Posted on"><i class="fa fa-calendar"></i> 01-12-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Type"><i class="fa fa-file"></i> Contract</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Location"><i class="fa fa-map-marker"></i> London</strong>
-                </small>
+                    <h4><small><i class="fa fa-briefcase"></i> IT Jobs <br> <strong><i class="fa fa-building"></i> InfoPark, Kakkanad</strong></small></h4>
+
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 01-12-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> Full Time</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> Kochi </strong>
+                    </small>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="job-details.html"><img src="https://www.mindinventory.com/blog/wp-content/uploads/2019/06/python-developer.png" alt="" style="width: 370px; height: 270px;"></a>
-              <div class="down-content">
-                <a href="job-details.html"><h4>Python Developer</h4></a>
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="https://miro.medium.com/max/1129/1*-za8S8j0FQi1qTsRI8MvXA.jpeg" alt="" style="width: 370px; height: 270px;"></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>Junior Software Engineer </h4></a>
 
-                <h6>$50 000</h6>
+                    <h6>$60 000</h6>
 
-                <h4><small><i class="fa fa-briefcase"></i>  <br> <strong><i class="fa fa-building"></i> Kottayam </strong></small></h4>
+                    <h4><small><i class="fa fa-briefcase"></i> IT Jobs <br> <strong><i class="fa fa-building"></i> Zewiya Software Solutions, Trivandrum</strong></small></h4>
 
-                <small>
-                     <strong title="Posted on"><i class="fa fa-calendar"></i> 15-06-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Type"><i class="fa fa-file"></i> Contract</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Location"><i class="fa fa-map-marker"></i> London</strong>
-                </small>
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 02-12-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> Internship </strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> Trivandrum </strong>
+                    </small>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="job-details.html"><img src="assets/images/product-3-370x270.jpg" alt="" style="width: 370px; height: 270px;"></a>
-              <div class="down-content">
-                <a href="job-details.html"><h4>C++ Programmer</h4></a>
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190626123927/untitlsssssed.png" alt="" style="width: 370px; height: 270px;"></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>Full Stack Developer </h4></a>
 
-                <h6>$70 000</h6>
+                    <h6>$60 000</h6>
 
-                <h4><small><i class="fa fa-briefcase"></i> IT Job <br> <strong><i class="fa fa-building"></i> InfoPark, Kochi</strong></small></h4>
+                    <h4><small><i class="fa fa-briefcase"></i> IT Jobs <br> <strong><i class="fa fa-building"></i> Feathersoft, Kochi</strong></small></h4>
 
-                <small>
-                     <strong title="Posted on"><i class="fa fa-calendar"></i> 02-12-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Type"><i class="fa fa-file"></i> Contract</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Location"><i class="fa fa-map-marker"></i> Ernakulam</strong>
-                </small>
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 11-11-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> Full-Time</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> Ernakulam </strong>
+                    </small>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="job-details.html"><img src="https://lh3.googleusercontent.com/proxy/TIbVwopmid7oh05ViiGlRsDi1H8jjcDlDG0C9R2SSuaTehRLjiMzM7cBnU3fi5HyTgs5yO1IkVbE5LhGlq3Cla8OpZNxGPDUMjbB2xUxWwB10MoJykjcMTrQbK9ErIat" alt="" style="width: 370px; height: 270px;"></a>
-              <div class="down-content">
-                <a href="job-details.html"><h4>HTML, CSS Developer</h4></a>
 
-                <h6>$60 000</h6>
+              <div class="col-md-6">
+                <div class="product-item">
+                  <a href="job-details.html"><img src="https://www.goteaminternet.com/wp-content/uploads/2018/10/Python-Developers.jpg" alt="" style="width: 370px; height: 270px;"></a>
+                  <div class="down-content">
+                    <a href="job-details.html"><h4>Python Developer </h4></a>
 
-                <h4><small><i class="fa fa-briefcase"></i>  <br> <strong><i class="fa fa-building"></i> Techno Park, Trivandrum </strong></small></h4>
+                    <h6>$60 000</h6>
 
-                <small>
-                     <strong title="Posted on"><i class="fa fa-calendar"></i> 01-12-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Type"><i class="fa fa-file"></i> Contract</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Location"><i class="fa fa-map-marker"></i> London</strong>
-                </small>
+                    <h4><small><i class="fa fa-briefcase"></i> IT Jobs <br> <strong><i class="fa fa-building"></i> Technopark, Trivandrum </strong></small></h4>
+
+                    <small>
+                         <strong title="Posted on"><i class="fa fa-calendar"></i> 20-11-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Type"><i class="fa fa-file"></i> Full-Time </strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong title="Location"><i class="fa fa-map-marker"></i> Trivandrum </strong>
+                    </small>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="job-details.html"><img src="https://www.mindinventory.com/blog/wp-content/uploads/2019/06/python-developer.png" alt="" style="width: 370px; height: 270px;"></a>
-              <div class="down-content">
-                <a href="job-details.html"><h4>Python Developer</h4></a>
+              
 
-                <h6>$50 000</h6>
-
-                <h4><small><i class="fa fa-briefcase"></i>  <br> <strong><i class="fa fa-building"></i> Kottayam </strong></small></h4>
-
-                <small>
-                     <strong title="Posted on"><i class="fa fa-calendar"></i> 15-06-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Type"><i class="fa fa-file"></i> Contract</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Location"><i class="fa fa-map-marker"></i> London</strong>
-                </small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="job-details.html"><img src="assets/images/product-3-370x270.jpg" alt="" style="width: 370px; height: 270px;"></a>
-              <div class="down-content">
-                <a href="job-details.html"><h4>C++ Programmer</h4></a>
-
-                <h6>$70 000</h6>
-
-                <h4><small><i class="fa fa-briefcase"></i> IT Job <br> <strong><i class="fa fa-building"></i> InfoPark, Kochi</strong></small></h4>
-
-                <small>
-                     <strong title="Posted on"><i class="fa fa-calendar"></i> 02-12-2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Type"><i class="fa fa-file"></i> Contract</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <strong title="Location"><i class="fa fa-map-marker"></i> Ernakulam</strong>
-                </small>
+              <div class="col-md-12">
+                <ul class="pages">
+                  <li class="active"><a href="#">1</a></li>
+                  <li ><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#" style="margin-bottom: 1em;"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        </div>
-        
       </div>
-      
     </div>
 
-
+    
     <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
       
       <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -331,6 +447,73 @@
     </footer>
     
     
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="contact-form">
+              <form action="#" id="contact">
+                  <div class="row">
+                       <div class="col-md-6">
+                          <fieldset>
+                            <input type="text" class="form-control" placeholder="Pick-up location" required="">
+                          </fieldset>
+                       </div>
+
+                       <div class="col-md-6">
+                          <fieldset>
+                            <input type="text" class="form-control" placeholder="Return location" required="">
+                          </fieldset>
+                       </div>
+                  </div>
+
+                  <div class="row">
+                       <div class="col-md-6">
+                          <fieldset>
+                            <input type="text" class="form-control" placeholder="Pick-up date/time" required="">
+                          </fieldset>
+                       </div>
+
+                       <div class="col-md-6">
+                          <fieldset>
+                            <input type="text" class="form-control" placeholder="Return date/time" required="">
+                          </fieldset>
+                       </div>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Enter full name" required="">
+
+                  <div class="row">
+                       <div class="col-md-6">
+                          <fieldset>
+                            <input type="text" class="form-control" placeholder="Enter email address" required="">
+                          </fieldset>
+                       </div>
+
+                       <div class="col-md-6">
+                          <fieldset>
+                            <input type="text" class="form-control" placeholder="Enter phone" required="">
+                          </fieldset>
+                       </div>
+                  </div>
+              </form>
+           </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -340,4 +523,5 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
   </body>
+
 </html>
